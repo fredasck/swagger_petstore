@@ -1,0 +1,2 @@
+{'id': 9222968140496970050, 'name': 'doggie', 'category': {'id': 0, 'name': 'my_dog'}, 'photoUrls': ['https://thepetridish.my/wp-content/uploads/2020/03/doggo.jpg'], 'tags': [{'id': 0, 'name': 'dog_fun'}], 'status': 'available'}
+{'id': 9222968140496970050, 'name': 'doggie', 'category': {'id': 0, 'name': 'my_dog'}, 'photoUrls': ['https://thepetridish.my/wp-content/uploads/2020/03/doggo.jpg'], 'tags': [{'id': 0, 'name': 'dog_fun'}], 'status': 'available'}
