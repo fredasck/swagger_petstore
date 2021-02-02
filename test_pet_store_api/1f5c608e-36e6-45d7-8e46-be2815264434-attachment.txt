@@ -1,3 +1,0 @@
-{'id': '', 'name': '', 'category': {'id': '', 'name': ''}, 'photoUrls': [''], 'tags': [{'id': '', 'name': ''}], 'status': ''}
-{'id': '', 'name': '', 'category': {'id': '', 'name': ''}, 'photoUrls': [''], 'tags': [{'id': '', 'name': ''}], 'status': ''}
-{'id': '', 'name': '', 'category': {'id': '', 'name': ''}, 'photoUrls': [''], 'tags': [{'id': '', 'name': ''}], 'status': ''}

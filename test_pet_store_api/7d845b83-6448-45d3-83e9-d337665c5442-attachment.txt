@@ -1,3 +1,0 @@
-{'id': '-', 'name': '2', 'category': {'id': '3', 'name': '4'}, 'photoUrls': ['5'], 'tags': [{'id': '6', 'name': '7'}], 'status': '8'}
-{'id': '-', 'name': '2', 'category': {'id': '3', 'name': '4'}, 'photoUrls': ['5'], 'tags': [{'id': '6', 'name': '7'}], 'status': '8'}
-{'id': '-', 'name': '2', 'category': {'id': '3', 'name': '4'}, 'photoUrls': ['5'], 'tags': [{'id': '6', 'name': '7'}], 'status': '8'}
