@@ -2,59 +2,82 @@ import allure
 import pytest
 from pet_store_api.pet_store_api_parametrize import get_pet_by_id, add_new_pet_2
 
+from alchemize import Attr, JsonTransmuter, JsonMappedModel
 
-# from alchemize import JsonListModel, Attr, JsonTransmuter
 
-
-# class PetAddRequest(JsonListModel):
+# class Category(JsonMappedModel):
+#     __mapping__ = {
+#         "category_id": Attr('category_id', int),
+#         "category_name": Attr('category_name', str)
+#     }
+#
+#     def __init__(self, category_id=None, category_name=None):
+#         self.category_name = category_name
+#         self.category_id = category_id
+#
+#
+# class Tags(JsonMappedModel):
+#     __mapping__ = {
+#         "tags_id": Attr('tags_id', int),
+#         "tags_name": Attr('tags_name', str)
+#     }
+#
+#     def __init__(self, tags_id=None, tags_name=None):
+#         self.tags_name = tags_name
+#         self.tags_id = tags_id
+#
+#
+# class PetAddRequest(Category, Tags, JsonMappedModel):
 #     __mapping__ = {
 #         'id': Attr('pet_id', int),
 #         'name': Attr('pet_name', str),
-#         'category_id': Attr('category_id', int),
-#         'category_name': Attr('category_name', str),
+#         'category': Attr('category', [Category]),
 #         'photoUrls': Attr('photo_urls', str),
-#         'tags_id': Attr('tags_id', int),
-#         'tags_name': Attr('tags_name', str),
+#         'tags': Attr('tags', [Tags]),
 #         'status': Attr('status', str)
 #
 #     }
 #
 #     def __init__(self, pet_id=None, pet_name=None, category_id=None, category_name=None, photo_urls=None, tags_id=None,
-#                  tags_name=None, status=None, **attrs):
-#         super().__init__(**attrs)
+#                  tags_name=None, status=None):
+#         super().__init__(category_id, category_name)
+#         super().__init__(tags_id, tags_name)
+#
 #         self.status = status
 #         self.tags_name = tags_name
 #         self.tags_id = tags_id
-#         self.photo_urls = photo_urls
+#         self.photoUrls = photo_urls
 #         self.category_name = category_name
 #         self.category_id = category_id
 #         self.pet_name = pet_name
 #         self.pet_id = pet_id
 #
 #
-# class PetAddResponse(JsonListModel):
+# class PetAddResponse(Category, Tags, JsonMappedModel):
 #     __mapping__ = {
 #         'id': Attr('pet_id', int),
 #         'name': Attr('pet_name', str),
-#         'category_id': Attr('category_id', int),
-#         'category_name': Attr('category_name', str),
+#         'category': Attr('category', [Category]),
 #         'photoUrls': Attr('photo_urls', str),
-#         'tags_id': Attr('tags_id', int),
-#         'tags_name': Attr('tags_name', str),
+#         'tags': Attr('Tags', [Tags]),
 #         'status': Attr('status', str)
+#
 #     }
 #
 #     def __init__(self, pet_id=None, pet_name=None, category_id=None, category_name=None, photo_urls=None, tags_id=None,
-#                  tags_name=None, status=None, **attrs):
-#         super().__init__(**attrs)
+#                  tags_name=None, status=None):
+#         super().__init__(category_id, category_name)
+#         super().__init__(tags_id, tags_name)
+#
 #         self.status = status
 #         self.tags_name = tags_name
 #         self.tags_id = tags_id
-#         self.photo_urls = photo_urls
+#         self.photoUrls = photo_urls
 #         self.category_name = category_name
 #         self.category_id = category_id
 #         self.pet_name = pet_name
 #         self.pet_id = pet_id
+
 
 @allure.severity(allure.severity_level.CRITICAL)
 @pytest.mark.parametrize("test_input, expected_result",

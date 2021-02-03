@@ -1,23 +1,5 @@
-import os
-
-import pytest
 import requests
 import json
-import logging
-
-from _pytest.config import Config
-
-
-# @pytest.fixture(scope='function', autouse=True)
-# def logger(request):
-#     log_file = logging.FileHandler(os.path.join('/', 'log', 'test_case.log'), 'a')
-#     formatter = logging.Formatter('%(asctime)s - %(name)s - %(level1name)s - %(message)s')
-#     log_file.setFormatter(formatter)
-#     Config.logger = logging.getLogger(request.function.__name__)
-#     Config.logger.setLevel(logging.DEBUG)
-#     for hdlr in Config.logger.handlers[:]:
-#         Config.logger.removeHandler(hdlr)
-#     Config.logger.addHandler(log_file)
 
 
 class Pet:

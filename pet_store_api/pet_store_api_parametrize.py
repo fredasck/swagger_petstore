@@ -1,12 +1,4 @@
 import requests
-import logging
-
-
-# logging.basicConfig(filename='example.log', encoding='utf-8', level=logging.DEBUG)
-# logging.debug('This message should go to the log file')
-# logging.info('So should this')
-# logging.warning('And this, too')
-# logging.error('And non-ASCII stuff, too, like Øresund and Malmö')
 
 
 def add_new_pet(pet_id, pet_name, category_id, category_name, photo_urls, tags_id, tags_name, status):
